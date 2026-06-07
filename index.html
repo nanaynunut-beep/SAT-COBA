@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Diri Siswa - Sita Sulistiawati</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Quicksand untuk kesan imut dan modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Quicksand', 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(180deg, #ff7ebb 0%, #ff529a 50%, #f43f83 100%);
+        }
+        /* Efek teks menyala (Glow Effect) seperti di gambar */
+        .glow-text {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+        /* Efek bayangan lembut untuk card */
+        .glass-card {
+            background-color: rgba(255, 142, 187, 0.9);
+            box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.4), 
+                        0 10px 25px rgba(244, 63, 131, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8">
+
+    <!-- Container Utama (Responsif, max-w mirip rasio layar HP di gambar) -->
+    <div class="w-full max-w-md mx-auto flex flex-col items-center py-6 text-white">
+        
+        <!-- HEADER / JUDUL UTAMA -->
+        <header class="text-center mb-6">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-wider uppercase text-white glow-text leading-tight">
+                Profile Diri<br>Siswa
+            </h1>
+            <!-- Subtitle dengan ornamen bintang kecil berwarna kuning/gold -->
+            <p class="text-xs md:text-sm mt-3 font-semibold text-pink-100 flex items-center justify-center gap-1.5">
+                <span class="text-yellow-300">✦</span> Kreatif 
+                <span class="text-pink-300">•</span> Modern 
+                <span class="text-pink-300">•</span> Informatika 
+                <span class="text-yellow-300">✦</span>
+            </p>
+        </header>
+
+        <!-- KARTU PROFIL UTAMA (Glassmorphism & Pink Elegan) -->
+        <main class="w-full glass-card rounded-[2.5rem] border border-white/30 p-8 flex flex-col items-center text-center relative overflow-hidden transition-all hover:scale-[1.01] duration-300">
+            
+            <!-- BINGKAI FOTO PROFIL -->
+            <div class="relative mb-6">
+                <div class="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white shadow-lg bg-white/80 flex items-center justify-center">
+                    <!-- Foto Profil Ilustrasi Siswa Berhijab (SVG Kustom agar presisi & aman tanpa broken link) -->
+                    <svg viewBox="0 0 100 100" class="w-full h-full text-pink-400">
+                        <!-- Background dalam lingkaran -->
+                        <circle cx="50" cy="50" r="50" fill="#FFE4EC"/>
+                        <!-- Hijab bagian belakang -->
+                        <path d="M50 15C32 15 25 28 25 45C25 65 30 85 50 85C70 85 75 65 75 45C75 28 68 15 50 15Z" fill="#FF7096"/>
+                        <!-- Wajah -->
+                        <ellipse cx="50" cy="46" rx="18" ry="21" fill="#FFE0D3"/>
+                        <!-- Hijab bagian depan/bingkai wajah -->
+                        <path d="M50 18C36 18 34 30 34 45C34 50 36 58 40 60C44 62 46 54 50 54C54 54 56 62 60 60C64 58 66 50 66 45C66 30 64 18 50 18Z" fill="#FF85A2"/>
+                        <!-- Mata imut -->
+                        <circle cx="44" cy="44" r="2" fill="#333333"/>
+                        <circle cx="56" cy="44" r="2" fill="#333333"/>
+                        <!-- Pipi kemerahan -->
+                        <circle cx="41" cy="48" r="2.5" fill="#FFA5AB" opacity="0.6"/>
+                        <circle cx="59" cy="48" r="2.5" fill="#FFA5AB" opacity="0.6"/>
+                        <!-- Senyum -->
+                        <path d="M48 50 Q50 52 52 50" stroke="#333333" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                        <!-- Pakaian / Seragam Sekolah Putih -->
+                        <path d="M28 85 C28 72 38 72 50 72 C62 72 72 72 72 85 Z" fill="#FFFFFF"/>
+                        <!-- Garis Leher / Kerah & Detail Stetoskop Sederhana Kesehatan -->
+                        <path d="M42 72 L42 77 A1 1 0 0 0 58 77 L58 72" stroke="#90E0EF" stroke-width="2" fill="none"/>
+                        <circle cx="58" cy="79" r="2.5" fill="#FFD166"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- NAMA LENGKAP -->
+            <h2 class="text-2xl md:text-3xl font-extrabold tracking-wide mb-6">
+                Sita Sulistiawati
+            </h2>
+
+            <!-- LIST DATA DIRI -->
+            <div class="w-full space-y-3.5 mb-8 text-pink-50">
+                <!-- Baris 1: Kelas -->
+                <div class="flex flex-col items-center">
+                    <span class="text-[11px] uppercase tracking-widest text-pink-200 font-bold">Kelas</span>
+                    <span class="text-base font-semibold">X Informatika</span>
+                </div>
+                
+                <!-- Baris 2: Sekolah -->
+                <div class="flex flex-col items-center px-4">
+                    <span class="text-[11px] uppercase tracking-widest text-pink-200 font-bold">Sekolah</span>
+                    <span class="text-base font-semibold leading-tight">
+                        SMKS Kesehatan Yannas<br>Husada Bangkalan
+                    </span>
+                </div>
+
+                <!-- Baris 3: Hobi -->
+                <div class="flex flex-col items-center">
+                    <span class="text-[11px] uppercase tracking-widest text-pink-200 font-bold">Hobi</span>
+                    <span class="text-base font-semibold">Coding dan Desain</span>
+                </div>
+            </div>
+
+            <!-- PARAGRAF / DESKRIPSI (Kutipan/Quotes) -->
+            <div class="border-t border-white/20 pt-6 w-full mb-8">
+                <p class="text-xs md:text-sm italic text-pink-100 font-medium leading-relaxed max-w-[280px] mx-auto">
+                    "Menceritakan pengalamannya dengan kreativitas, teknologi, dan semangat belajar."
+                </p>
+            </div>
+
+            <!-- SOSIAL MEDIA (Ikon SVG Putih) -->
+            <div class="flex items-center justify-center gap-6">
+                <!-- Instagram -->
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/20 transition-all duration-300">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                    </svg>
+                </a>
+                <!-- TikTok -->
+                <a href="https://tiktok.com" target="_blank" aria-label="TikTok" class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/20 transition-all duration-300">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.63 4.15 1.05.99 2.49 1.52 3.93 1.55v3.83c-1.6-.04-3.18-.51-4.52-1.39-.17-.11-.33-.24-.49-.37v7.26c0 1.25-.26 2.52-.82 3.62-.64 1.23-1.68 2.24-2.95 2.81-1.39.61-2.95.77-4.44.47-1.46-.3-2.81-1.12-3.79-2.22-1.1-1.25-1.69-2.89-1.69-4.56 0-1.74.65-3.44 1.83-4.71 1.15-1.22 2.76-1.95 4.43-2.03 1-.05 2 .12 2.94.51v3.91c-.69-.32-1.46-.42-2.21-.31-.72.1-1.41.45-1.9 1.01-.58.67-.88 1.56-.84 2.46.03.88.39 1.73 1.03 2.32.65.59 1.53.88 2.4.82.84-.06 1.62-.48 2.11-1.17.42-.61.6-1.34.58-2.08v-14.1z"/>
+                    </svg>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/#" target="_blank" aria-label="WhatsApp" class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/20 transition-all duration-300">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.413 9.863-9.83.001-2.624-1.013-5.091-2.858-6.937C16.632 1.993 14.168.98 11.55.98c-5.443 0-9.87 4.412-9.873 9.83-.001 2.016.521 3.988 1.512 5.718L2.16 21.8l5.513-1.446z"/>
+                    </svg>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com" target="_blank" aria-label="GitHub" class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/20 transition-all duration-300">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="mt-8 text-center text-pink-200/80 text-[11px] font-medium tracking-wide">
+            &copy; 2026 Sita Sulistiawati. Semua Hak Cipta Dilindungi.
+        </footer>
+
+    </div>
+
+</body>
+</html>
